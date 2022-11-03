@@ -1,0 +1,10 @@
+ - Método de adaptamos una resolución de página a vários dispositivos. (a pc, mobile, tablets, etc)
+
+ - El mobile-first és un concepto de adaptación de páginas donde creamos primero la página
+para dispositivos mobile, y despues la adaptamos a otros dispositivos, es decir, empezamos
+de la menor resolución y vamos adaptando hasta la mayor resolución.
+
+(IMPORTANTE!! Además es MUY IMPORTANTE para el SEO, y google recomienda mejor las páginas
+que tienen el mobile-first bién trabajadas. Es muy importante para que en el buscador, 
+nuestra página se salte primero)
+

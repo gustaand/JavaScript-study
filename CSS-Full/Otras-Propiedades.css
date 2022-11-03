@@ -1,0 +1,55 @@
+/* Existen muchas formas de trabajar con selectores. Más en: https://www.w3schools.com/cssref/css_selectors.app  */
+
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+/* ---- DIRECTION ----*/
+/* Sirve para cambiar el contenido de dirección, des de donde empieza. Casi como un text align.*/
+/* direction: ltr (left to right) | rtl (right to left) | initial | inherit; */
+
+.container {
+    margin-top: 10px;
+}
+
+.container:first-child {
+    padding: 20px;
+    background-color: #59f;
+    font-size: 30px;
+    direction: rtl;
+}
+
+
+/* ---- LETTER-SPACING ---- */
+/* Separa las letras la cantidad que nosotros digamos. */
+
+.container:nth-child(2) {
+    padding: 20px;
+    background-color: #59f;
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
+/* ---- SCROLL-BEHAVIOR ---- */
+/* Mejora o no el scroll. Se puede modificar!*/
+/* Se aplica a todos los elementos, ya que tiene el scroll.*/
+
+
+* {
+    scroll-behavior: smooth;
+}
+
+#content {
+    background: red;
+}
+
+/* ---- USER-SELECT ---- */
+/* hacemos con que el usuario no pueda seleccionaralgo que no queramos que seleccione.*/
+/* podemos cambiar las propiedades de la selección. */
+
+.no-select {
+    background-color: #c5f;
+    user-select: none;
+}

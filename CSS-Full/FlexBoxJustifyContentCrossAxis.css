@@ -1,0 +1,43 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+/* Las propiedades del flex afectan a los items pero se les aplican al CONTENEDOR.*/
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-content: baseline;
+}
+
+.flex-item {
+    background-color: #248;
+    color: #fff;
+    margin: 5px;
+    width: 120px;
+    text-align: center;
+    height: 100px;
+}
+
+.orange {
+    background: orange;
+}
+
+.green {
+    background: green;
+}
+
+/* Align-items: Flex-star, center, flex-end, stretch, baseline. (cross-axis)*/
+
+/* - align-items: stretch; es la propiedad por defecto. Si no hay height, se estira todo hasta abajo.
+   - align-items: center; centra el contenedor con todas las cajas en el cross-axis (eje Y).
+   - align-items: flex-end; pone todo abajo del cross-axis.
+   - align-items: flex-start; la caja flexible se ajusta a su contenido, mismo que no haya height.
+    se Ajusta todo arriba en el cross-start.
+   - align-content: Propiedad que se usa para cuando hay varias líneas. Ajusta las líneas de las cajas flex
+    en el cross-axis sin que se centren. Se quedaran pegadas unas en las otras.
+   - align-content: baseline; sirve para ajustar bien el contenido abajo para que no se despegue al disminuir
+    la pantalla. (generalmente se usa cuando tenemos un wrap-reverse y queremos tirar las cajas para abajo).*/

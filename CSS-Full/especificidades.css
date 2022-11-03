@@ -1,0 +1,11 @@
+/* Mirar los niveles huerarquicos en la imagen. aqui es el ejemplo del nivel !important, el que sobrepone qualquier cosa.*/
+
+h2 {
+    color: red !important
+}
+
+h2 {
+    color: blue
+}
+
+/* si no hubiera el !important se reproduciria el ultimo comando. */

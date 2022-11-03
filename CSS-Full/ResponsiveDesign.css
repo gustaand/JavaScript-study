@@ -1,0 +1,52 @@
+* {
+    font-family: sans-serif;
+    font-size: auto;
+}
+
+.div-responsive {
+    background: #c95;
+}
+
+/* usamos el @media para definir el tipo SCREEN y usar la condición AND (min-width: ) para definir el mínimo del width que se va aplicar
+   el estilo que vamos a dar, menos que eso no se aplica. */
+/* además le podemos aplicar un max-width con otro AND (max-width: ) para definir el tamaño maximo al que se le aplicará el
+   efecto. */
+
+@media screen and (min-width: 400px) and (max-width: 650px) {
+    .div-responsive {
+        background: red;
+        padding: 20px;
+        margin: 50px;
+        border: 10px ridge #00f;
+        box-shadow: -5px 5px 7px #000;
+    }
+}
+
+/* vamos hacer unos cuantos cambios de estilo en diferentes resoluciones.*/
+/* podemos darles distintas propiedades a cada uno.*/
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+    .div-responsive {
+        background: green;
+        padding: 10px;
+        margin: auto 50px;
+        border: 2px solid #000;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    .div-responsive {
+        background: orange;
+        font-size: 35px;
+        margin: 20px;
+        padding: 80px;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .div-responsive {
+        background: #000;
+        color: #fff;
+    }
+}

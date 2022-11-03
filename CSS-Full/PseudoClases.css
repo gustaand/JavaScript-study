@@ -1,0 +1,132 @@
+/* Pseudo-clase se trabaja junto con un pseudo-elemento.*/
+/* Lo que hacemos con pseudo-clases es escuchar un evento. Són como escuchas.*/
+/* Tenemos várias pseudo-clases, y las mas comunes són: :hover, :link, :visited, :avtive, :focus y :lang.*/
+/* Són elementos en linea.*/
+
+* {
+    font-family:cursive;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.caja1 {
+    height: 200px;
+    width: 200px;
+    background-color: slateblue;
+    border: 5px groove red;
+    transition: all 0.3s;
+
+}
+
+
+
+/* :HOVER
+   funciona en cualquier elemento. Sirve para escuchar el evento cuando pasamos el mouse por encima,
+   como cambiar de color, por ejemplo. 
+   Incluso podemos cambiar el tamaño del ícono y todo, pero la transición será muy rápida, entonces podemos
+   arreglarlo con la propiedad transition.*/
+
+/* La propiedad TRANSITION nos permite cambiar la velocidad en la que ocurre las transiciones, especialmente
+   en el :hover.*/
+/* Para cambiarle todas las propiedades del transition a la vez, se coloca transition: all 1s;
+   Si quiere cambiar todas las propiedades menos alguna es ej: transition: all 1s, propiedad 0.2s */
+
+.caja1:hover {
+    background: darkblue;
+    height: 300px;
+    width: 300px;
+    border: 5px groove #612;
+}
+
+/* otro ejemplo de hover.*/
+
+.boton {
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid darkblue;
+    background-color: blue;
+    color: black;
+}
+
+.boton:hover {
+    padding: 20px;
+    background-color: darkblue;
+    border: 5px solid blue;
+    color: white;
+}
+
+
+/* :LINK
+   Cambia un link que todavia no visitamos.*/
+
+/* Los links que visitamos volverán a ser del color normal, pero los que nunca visitamos estarán en rojo.
+   Los links que no extisten nunca volverán al normal.*/
+/* Si el enlace ya está visitado, ya no será más rojo.*/
+
+a {
+    margin: 30px;
+    display: block;
+}
+
+a:link {
+    color: red
+}
+
+
+/* :VISITED
+   Propiedad que nos permite cambiar las propiedades de los enlaces visitados. Como el color, etc.*/
+/* En este caso pusimos el color violeta, entonces los links que hemos visitado se cambiarán al color violeta.*/
+
+a:visited {
+    color: violet;
+}
+
+/* :ACTIVE
+   Hace con que al dejar aprietado un botón, cambia los estilos.*/
+
+.caja-active {
+    width: 250px;
+    height: 250px;
+    background: red;
+    margin: 25px;
+    transition: 0.5s;
+}
+
+.caja-active:active {
+    background: blue;
+    width: 600px;
+}
+
+/* :FOCUS
+   Se aplica más a los INPUTS, y es cuando el elemento está en foco.*/
+/* cuando se desenfoca (deja de estar "seleccionado") vuelve al normal.*/
+/* Ej: al clicar, el input se quedará de color gris, y mientras esté enfocado podemos escribir.
+   Cuando clicamos fuera, ya dejará de estar enfocado, entonces volverá al color normal y ya no poderemos escribir.*/
+
+.caja-input {
+    margin: 30px;
+    transition: 0.5s;
+    background: lightgray;
+}
+
+.caja-input:focus {
+    background: white;
+}
+
+/* :LANG()
+   Es una función, por lo tanto se define un parametro.
+   Funciona más para lenguajes. por ejemplo, Español es (es), Inglés es (en), etc.*/
+/* Se da la pseudoclase lang() en css pero antes se define en html con lang="".*/
+/* (casi no se usa...)*/
+
+.caja-lang {
+    margin: 25px;
+}
+
+:lang(en) {
+    background: red;
+    padding: 20px;
+}
+
+/* :VALID
+   (inputs)  selecciona los elementos válidos, si el elemento no es válido podemos dar un estilo diferente.*/

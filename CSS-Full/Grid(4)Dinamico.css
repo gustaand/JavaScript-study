@@ -1,0 +1,53 @@
+/* Grid Dinamicos és el grid que tiene columnas, estruturas autoajustables, y otraspropiedades que cambian multuamente. */
+
+
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background: radial-gradient(circle, #fff, #bbb);
+    padding: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(3, 100px);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 4px solid #000;
+    background-color:  #333;
+    grid-auto-flow: dense;
+}
+
+.grid-item {
+    border: 1px solid #000;
+    background-color: #999;
+}
+
+/* 
+   propiedades del grid-dinamico:
+   minmax: va dentro del grid-template-columns ej: grid-template-columns: repeat(3, minmax(100px, 300px));
+           define el tamaño mínimo y el maximo de la celda.
+
+   min-content: hace con que la celda del grid sea del tamaño del mínimo del contenido.
+   max-content: (no se usa mucho) Hace conque la celda del grid sea del tamaño maximo del contenido.
+
+   Dentro del minmax se puede aplicar el max-content y el min-content. Ej: minmax(min-content, max-content)
+   también se le puede dar en medidas fr. Ej: minmax(120px, 1fr) 
+*/
+
+/*  
+   Cantidades: AUTO-FILL Y AUTO-FIT :con estas propiedades de cantidad podemos hacer que, al crescer, el grid se ajuste
+   e/o que siga generando filas.
+
+   se coloca como cantidad. Ej: grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+   auto-fill hace con que se¡iga generando columnas o filas mientras se alarga.
+   auto-fit escala los elementos.
+*/
+
+/* Grid-Template: row / columns (grid-container) ---- SHORTHAND ----*/
+/* Grid-Template: area unidad ---- SHORTHAND ----*/

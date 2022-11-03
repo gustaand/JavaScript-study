@@ -1,0 +1,34 @@
+/*si se trabaja con medidas fijas, no se ajusta las medidas en otras plataformas (como móbiles), en cambio con medidas relativas
+si.
+las medidas relactivas són; REM y EM  donde un EM són 16px por defecto.
+pero en la caja contenedora ( <div></div> ) podemos definir el valor de EM como queremos.
+si selecciono la caja div y pongo font-size: 20px; el valor de EM para el contenido de la caja será 1em=20px.
+Entonces primero damos el valor de los pixeles (px) en la caja contenedora, y despues usamos la medida relactiva en los contenidos.
+*/
+
+/*
+.contact-form {
+    font-size: 20px;
+}
+
+.contact-form__h2 {
+    font-size: 5em
+}
+*/
+
+/* Ancho y altura!
+se da ultilizando el VIEWPOR WIDTH (vw) y VIEWPOR HEIGHT (vh). si pongo 100vw y 100vh es la pantalla completa. (como porcentage
+de pantalla)
+*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.contact-form {
+    font-size: 20px;
+    background-color: royalblue;
+    width: 80vw;
+    height: 50vh;
+}

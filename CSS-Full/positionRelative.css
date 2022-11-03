@@ -1,0 +1,76 @@
+
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+div {
+    width: 120px;
+    height: 120px;
+    display: block;
+}
+
+.caja1 {
+    background-color: orange;
+}
+
+/* con el relative, el espacio de la caja se conserva. La caja 3 no va subir para donde estava la caja 2. y las coordenadas
+   són la misma. cuenta a partir de debajo de la caja anterior.*/
+.caja2 {
+    background-color: green;
+    position: relative;
+    top: 60px;
+    left: 20px;
+    z-index: 10;  /* como tiene el z-index con un valor maior q la caja 3, se quedará por encima de ella. */
+}
+
+.caja3 {
+    background-color: aqua;
+    position: relative;
+}
+
+.caja4 {
+    background-color: yellow;
+}
+
+/* propriedades del position: STATIC, RELATIVE, ABSOLUTE, FIXED, STICKY */
+
+/* Cuando posicionamos un elemento, hacemos que se adquiera 4 nuevas propiedades: top, left, right y bottom.
+   las dos que más importan són: top y left, y prevalecen sobre las otras. */
+
+/* dejando el margin: auto;  la caja se va al centro de la página. */
+
+/* !!!! EL Z-INDEX !!!!!  
+   la propiedad que hace con que una caja sobreponga otra, haciendo aparecer la caja con el valor más grande. 
+   si dibujas 2 cajas de position: relative;, la segunda caja sobrepone la primera, por que se dibujó despues.
+   El z-index por defecto tiene valor 0. si queremos que alguna caja sobreponga a otra, le damos un valor más alto
+   con z-index: 1 por ejemplo.
+   Es recomendable dejar por lo menos 10 espacios de un z-index a otro para poder poner cosas en el medio.
+   ej: z-index: 10; z-index: 20; etc.
+   (el z-index solo afecta las cajas que están posicionadas. Si la caja no está posicionada se quedará por debajo 
+   de las cajas que están posicionadas.)
+   
+   el z-index tiene conflicto entre padre y hijo. Si el padre tiene un z-index maior que del hijo, aún así no va
+   sobreponer. La unica forma es dejar el padre (la caja contenedora) sin position, y en el hijo (caja contenido)
+   poner z-index: -1; . De esta forma, la caja contenido podrá ir para trás de la caja contenedor. */
+
+.contenedor {
+    width: 300px;
+    height: 200px;
+    background: blue;
+    margin: auto;
+    /* Aqui el z-index no está definido. */
+}
+
+.hijo {
+    width: 120px;
+    height: 120px;
+    background-color: red;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+    /* aqui el z-index está definido, por lo tanto podrá ir para detrás de la caja contenedora, haciendo que ella
+       sobreponga esta caja hijo. */
+}

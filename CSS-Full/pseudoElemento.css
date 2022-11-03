@@ -1,0 +1,71 @@
+/* Los Pseudo-elementos se usan en un elemento seguido de ::
+   ej: elemento::first-line .*/
+
+* {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.texto {
+    padding: 20px;
+}
+
+/* el pseudo-elemento ::first-line cambia solo la primera línea, no importa el tamaño de la pantalla, o si se ajusta o no.*/
+/* NO SE PUEDE APLICAR A ELEMENTOS INLINE*/
+
+.texto::first-line {
+    color: blue;
+    font-size: 2em;
+}
+
+/* el pseudo-elemento ::first-letter cambia las propiedades de la primera letra.*/
+/* NO SE PUEDE APLICAR A ELEMENTOS INLINE*/
+
+.texto::first-letter {
+    font-size: 3em;
+    color: red;
+}
+
+/* pseudo-elemento ::placeholder se escribe la propiedad del input en HTML ej:
+   ( <input type="text" placeholder="cualquier cosa!"> ) y se edita en CSS.*/
+/* cambia qualquier propiedad del texto placeholder.*/
+
+form {
+    margin: 100px auto;
+    display: block;
+    background-color: #555;
+    padding: 100px;
+    width: 50%;
+}
+
+input {
+    padding: 6px;
+    width: 100%;
+    
+}
+
+input::placeholder {
+    color: darkblue;
+}
+
+/* pseudo-elemento ::selection . Cambia las propiedades de la seleccion de las cosas 
+   (cuando clicamos con el mouse e arrastramos para copiar algo).*/
+/* Muy útil para cuando tenemos las letras claras y el fondo oscuro, etc.*/
+
+.div-p {
+    margin: 100px auto;
+    display: block;
+    background-color: #555;
+    padding: 50px;
+    width: 50%;
+}
+
+p {
+    padding: 6px;
+    width: 100%;
+}
+
+p::selection {
+    color: blue;
+    background-color: gold;
+}

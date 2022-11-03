@@ -1,0 +1,24 @@
+/* El cursor:; cambia el cursor de las cosas. Por ejemplo pasar el mouse por encima de un objeto, el mouse se cambia a una mano.*/
+/* cursores: progress; copy; etc... hay una gran lista de cursores, lo puedes ver todos en: 
+   https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor (o buscando por cursors en w3school, una página bueníssima).*/
+
+* {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.caja {
+    margin: 40px;
+    width: 200px;
+    height: 300px;
+    border: 5px solid red;
+    background: pink;
+    cursor: pointer;
+}
+
+.caja:active {
+    cursor: progress;
+}
+
+/* la manera más correcta de definir un cursor és ponerlo en la caja como pointer; y después en la caja:active el cursor que
+   queremos aplicar cuando se clique.*/

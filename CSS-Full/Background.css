@@ -1,0 +1,30 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.container {
+    padding: 20px;
+    background-color: #025;
+    border: 2px solid #f00;
+    width: 1450px;
+    height: 360px;
+    margin: 40px;
+    background-image: url(https://wallpaperaccess.com/full/3199302.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* background-color: color del background.*/
+/* background-img: url(url) para poner imagenes en el background con url. */
+/* background-size: sirve para ajustar la imagen del background. (igual que object-fit)*/
+/* background-repeat: repeat, no-repeat; sirve pare repetir, o no, la imagen del background.*/
+/* background-clip: border-box, padding-box, content-box; nos dice des de donde se va mostrar la imagen. */
+/* background-origin: igual que el clip, pero dice de donde se va originar na imagen. */
+/* background-position: eje X --> left, top, bottom, right, center + eje Y --> left, top, bottom, right, center.
+   Posiciona la imagen con combinaciones: X Y */
+
+/* background-attachment: fixed (hay muchas propiedades, pero esa es la que más se usa);
+   sirve para que se quede fijo en el viewport. ---- MUY USADO PARA EL DISEÑO WEB!! ---- */

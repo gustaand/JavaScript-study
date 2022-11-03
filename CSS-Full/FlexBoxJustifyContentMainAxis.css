@@ -1,0 +1,49 @@
+/* Flex són cajas flexibles que se puede desplazar por la página. Necesitan de dos cosas: Flex conteiner y Flex item.
+   Los Flex items són elementos que están dentro de un contenedor con el display flex.
+   Por ejemplo: Si tenemos un <div></div> con el display flex y dentro tenemos un p, un b 
+   y una imagen, todos estos elementos són Flex Items. */
+/* Cuando trabajamos con Flex, las direcciones por defecto són: 
+   MAIN AXIS (de la esquieda a la derecha "eje X") y CROSS AXIS (de arriba para bajo "eje Y"). (MIRAR LA IMAGEN EN LA CARPETA)*/
+/* Con flex box invertimos todo esto, cambiamos las direcciones, etc.*/
+/* los elementos por defecto vienen en el main axis horizontal.*/
+
+/* Main Axis: Main-start (esquierda), Main-end (derecha).
+   Cross Axis: Cross-start (arriba), Cross-and (abajo).
+*/
+
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+/* Las propiedades del flex afectan a los items pero se les aplican al CONTENEDOR.*/
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-item {
+    background-color: #248;
+    color: #fff;
+    margin: 5px;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+}
+
+.orange {
+    background: orange;
+}
+
+.green {
+    background: green;
+}
+
+/* Propiedades del Justify-content: center, space-arround, space-between, space-evenly (main axis).*/
+
+/* - justify-content: center; se centra el contenido
+   - justify-content: space-arround; es lo mismo que un margin: auto; pero es mejor ultilizarlo para dar la propiedad
+    solo al contenedor, y después ir cambiando las propiedades de cada item.
+   - justify-content: space-between; deja la mayor distancia entre cajas.
+   - justify-content: space-evenly; separa las cajas por distancias iguales, centradas.*/ 

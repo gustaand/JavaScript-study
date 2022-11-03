@@ -1,0 +1,26 @@
+* {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+/* El float se usava antes para varias cosas, pero este es el mejor uso del float hoy.*/
+/* con el float, podemos poner una imagen e un texto dentro de un contenedor. El uso del float (left, right)
+   hace con que el texto envuelva la imagen, dando un buen efecto.*/
+/* Es mejor que se use con un contenedor separado para ello.*/
+/* Es el "unico uso recomendado" ya que hoy en dia hay muchas formas mejores de hacer lo que el float hace.*/
+
+.contenedor {
+    margin: auto;
+    margin-top: 50px;
+    border: 4px solid red;
+    background: gray;
+    width: 50%;
+    padding: 20px;
+}
+
+img {
+    float: left;
+    width: 400px;
+    height: 300px;
+    margin-right: 18px;
+}

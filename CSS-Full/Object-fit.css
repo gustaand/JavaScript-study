@@ -1,0 +1,38 @@
+/* El Object-fit se aplica en las imagenes principalmente, y es MUY INPORTANTE cuando trabajamos con imagenes.*/
+/* Sirve mucho para GALERÍAS, etc.*/
+
+* {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+/* La propiedad object-fit tiene vários valores: contai, cover, none, scale-down*/
+
+.caja {
+    margin: 25px;
+    width: 400px;
+    height: 500px;
+}
+
+.caja img {
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+    object-position: left; /* la imagen se mostrará en el lado de la derecha.*/
+}
+
+/* object-fit: CONTAIN; hace con que las resoluciones de la imagen se ajusten al contenido.*/
+
+/* object-fit: COVER; hace con que la imagen rellene todo el espacio del contenedor, sin deformarla. No importa el contenido.*/
+
+/* object-fit: NONE; hace con que la imagen se ajuste de la forma que quiera, hasta las propiedades originales de la imagen
+   no pasa de esto.*/
+
+/* object-fit: scale-down; sirve para imagenes que no són tan grandes. Se queda con la mejor RESOLUCiÓN para la imagen
+   en el contenedor.*/
+
+/* OBJECT-POSITION:;
+   lo que hace es posicionar la imagen en el contenedor. Si la imagen es más grande que el contenedor y está ajustada con
+   object-fit:cover; se le puede posicionar de la manera que quieras para que se muestre lo que quieras.
+   (left, right, top, bottom, none) (también con pixeles o em)*/

@@ -1,0 +1,53 @@
+/* LA MEJOR FORMA DE TRABAJAR CON ANIMACIONES ÉS USANDO EL TRANSLATE. CONSUME MUCHO MENOS RECURSOS.*/
+
+/* Las transformaciones transforman el elemento. */
+/* hay varias formas de transformalo. La primera lo transforma de un lado para otro, de arriba para bajo, de adentro para el fondo.*/
+
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    padding: 20px;
+    background: #86f;
+}
+
+.caja {
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    display: flex;
+    color: #fff;
+    transform: translate(50px);
+    transition: 0.15s;
+}
+
+.caja:hover {
+    transform: translatey(-10px) translate(50px);
+}
+
+b {
+    margin: auto;
+}
+
+/* ---- PROPIEDADES ---- */
+
+/* transform: translateX() lo translada en el eje X la cantidad que le damos.
+   transform: translateY() lo translada en el eje Y la cantidad que le demos.
+   transform: translate() es un shorthand que sirve para el eje X y el eje Y ej: transform: translate(20px, 50px).
+*/
+
+/* transform: scale() shorthand, cambia el tamaño, el largo o el ancho del elemento.
+   transform: scaleX() e scaleY().
+*/
+
+/* transform: skew(deg); funciona para "tumbar" el elemento los grados que le demos.*/
+
+/* CLIP-PATH: Sirve para darmos cualquier forma al elemento, se trabaja con coordenadas y se puede generar en el google.
+   En google: clip-path generator. Copia y pega en la caja.*/
+
+/* existen muchas otras propiedades. Se puede buscar en la web.*/
+
+/* https://www.w3schools.com/cssref/css3_pr_transform.asp */

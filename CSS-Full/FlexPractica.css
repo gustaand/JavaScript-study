@@ -1,0 +1,91 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background-color: #000;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #333;
+    margin: 50px 50px;
+    min-width: 400px;
+}
+
+.form {
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+    order: 5;
+}
+
+.form__input {
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0px;
+    border: none;
+    border-bottom: 3px solid #6bd;
+    background: transparent;
+    color: #fff;
+}
+
+.form__input:focus {
+    background: linear-gradient(to bottom, transparent, #222); /* el linear-gradient genera un efecto de desenfoque, dependiendo de donde lo queremos poner.*/
+    outline: none;
+    border-bottom: 3px solid rgb(114, 241, 241);
+}
+
+.form textarea {
+    min-height: 140px;
+    resize: none; /* le sacamos para que no se pueda estirar dentro de la página. Así no modificará el diseño.*/
+}
+
+.form-img {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    min-width: 300px; /* El min-width hace con que el contenido o la caja no baje del tamaño que aplicamos. (o sea, el width minimo será de Npx).*/
+    max-width: 400px; /* El max-width funciona como el min-width, pero no deja que la caja ultrapase el tamaño que aplicamos.*/
+    order: 2;
+}
+
+.form-img div {
+    padding: 10px;
+}
+
+.img-container {
+    margin: auto;
+}
+
+.img-container div {
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    padding: 40px;
+}
+
+.form-img img {
+    width: 90%;
+    margin: auto;
+}
+
+.form input[type="submit"] {
+    background-color: rgb(20, 161, 217);
+    border-bottom: none;
+    padding: 12px;
+}
+
+.form input[type="submit"]:hover {
+    background-color: rgb(4, 86, 118);
+    border-bottom: none;
+    padding: 12px;
+}
+
+/* background: linear-gradient(to bottom, transparent, #222); funciona en esta secuencia: 
+   hacia donde apunta, qual es el degradado, color del desenfoque.*/

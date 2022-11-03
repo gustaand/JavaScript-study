@@ -1,0 +1,77 @@
+/* estructura basica:
+ selector {
+     propriedad:valor;
+ } 
+ 
+ --------------------------- */
+
+[da-igual="sii"] {
+    color:rebeccapurple;
+}
+
+h2 b:hover {
+    color:firebrick;
+}
+
+/* 
+  .SELECTOR UNIVERSAL
+
+        * {
+            color:red;
+        }
+
+  .SELECTOR DE TIPO (nombre de los elementos, ej: h1, h2, button, etc)
+
+        h1 {
+            color:blue;
+        }
+
+  .SELECTOR DE CLASE (Hay que poner el atributo --> class="nombre" en el <>html.) 
+
+    (ej: <h2 class="titulo-h2"> nombre </h2> )
+
+        .titulo-h2 {
+            color:yellow;
+        }
+
+  .SELECTOR POR ID (Hay que poner el atributo --> id="nombre" en el <>html.) Se recomienda trabajar con los IDs unicos, sin repitirlos
+
+    (ej: <h2 id="element-for-modify"> nombre </h2> )
+
+        #element-for-modify {
+            color:red;
+        }
+
+  .SELECTOR DE ATRIBUTO: hay que poner el mismo nombre de atributo en html y seleccionarlo en css con []. Qualquier nombre de atrib.
+
+    (ej: <h2 rancio="sii"> titulo </h2> )
+
+        [rancio="sii"] {
+            color:blue;
+        }
+
+  .SELECTOR DESCENDIENTE: selecciona los elementos que estan dentro de otros, se selecciona primero el contenedor y luego lo que hay dentro.
+    
+    (ej: <h2><p> nombre </p></h2> )
+
+        h2 p {
+            color: yellow;
+        }
+    
+    (ej 2: <h2 class="clase-h2"><p> nombre </p></h2> )
+
+        .clase-h2 p {
+            color: red;
+        }
+      
+  .SELECTOR POR PSEUDO-CLASES: Són los eventos de la selección, como por ejemplo quando queremos que se quede de otro color al 
+   pasar el mouse por encima de alguna palabra.
+
+    (ej: <h2>titulo h2</h2> )
+
+        h2:hover {
+            color: red;
+        }
+
+   !!SE PUEDE SELECCIONAR DE QUALQUIER OTRO SELECTOR!!
+*/

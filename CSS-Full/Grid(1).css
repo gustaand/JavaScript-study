@@ -1,0 +1,93 @@
+/* Grid container: Es todo el conteiner, quando damos display: grid; en una caja, se comporta como block pero cambia la estructura.
+  ahora el contenido va estar dividido por grids.*/
+
+/* Grid Item: són todos los elementos que están dentro de un grid container, independiente de donde están.*/
+
+/* Grid Cell: Es el dibujo que se hace dentro del contenedor cuando ponemos columnas y filas. (són los "cuadraditos" del grid).*/
+
+/* Grid Tracks (column y row): los grid tracks column són las columnas, y los grid tracks row són filas. 
+  El total de tracks és la suma de las columnas y las filas: Column + Row = Total Tracks.*/
+
+/* Grid Area: són areas que seleccionamos del grid, y són consecutivas. Las áreas la definimos nosotros, to existe área por defecto.
+   no puede haver áreas horizontales ni vertical mesclado con horizontal (en cruz), tienen que ser consecutivas.*/
+
+/* Grid Line (Column Line y Row Line: són las líneas divisórias del grid. La cantidad de líneas se cuenta con las de los bordes.
+   por ejemplo: si tenemos un cuadrado, hay 4 líneas, 2 column lines y 2 row lines.*/
+
+
+
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background: radial-gradient(circle, #fff, #bbb);
+    padding: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 1fr;
+    grid-template-rows: 150px 150px 150px;
+    border: 4px solid #000;
+    background-color:  #333;
+    /*grid-gap: 10px;*/
+}
+
+.grid-item {
+    border: 1px solid #000;
+    background-color: #999;
+}
+
+.grid-item:first-child {
+   background-color: #900;
+   grid-column: 1 / 3;
+   grid-row: 1 / 3;
+}
+
+/* Seleccionar elementos con:nth-child(numero del elemento).*/
+
+.grid-item:nth-child(2) {
+   background: #090;
+   grid-column: 3 / 5;
+   grid-row: 1 / span 2;
+}
+
+
+
+/* Propiedades para trabajar con grid: Los definimos con medidas.
+   - Grid-template-rows (grid-container)
+   - Grid-template-columns (grid-container)*/
+
+/* Grid-Template-rows: ponemos el numero de filas que queramos. Una vez definido las filas, las que sobran són grid implícitos
+   grid que no estamos trabajando. Si tengo 9 items y pongo 3 filas. las 6 que quedan són GRIDS IMPLICITOS.*/
+
+/* Grid-Template-columns: és igual al template-row, pero lo que crea són columnas.*/
+/* Si ponemos 3 filas y 3 columnas tendremos 9 cells (celdas/cuadraditos).*/
+
+/* Grid-Template: row / columns (grid-container) ---- SHORTHAND ----*/
+/* Grid-Template: area unidad ---- SHORTHAND ----*/
+
+/* Podemos aplicar en el lugar de las medidas, un "auto" o un "fr". 
+   - 1fr (es parecido a decir 1 flex-row) el espacio que sobra en la pantalla se le dará al grid que pongamos fr.*/
+
+/* Grid-row-gap: se separan las filas;
+   Grid-column-gap: se separan las columnas;
+   Grid-gap: row column; (filas y columnas).
+   Es la distancia que habrá entre una celda y otra. És un tipo de margin entre celdas del grid.
+   (no se separan de los bordes del grid, solo entre si). 
+   ( todo ello al grid-container).
+*/
+
+/* (TODAS GRID-ITEM)
+   Grid-row-start:
+   Grid-row-end:
+   Grid-column-start:
+   Grid-column-end:
+   Se abrevia con grid-row y grid-column.
+   Sirven para hacer con que se ocupe más espacios y columnas. Se define con 1 / algo. 
+   ej: grid-column: 1/3
+   también se puede: grid-column: 1 / span 3;   (de este modo estamos diciendo que arranque de la columna 1 y ocupe 3 columnas)
+   el span dice que arranque des de la fila o columna que indicamos y ocupe las filas o columnas que indiquemos.
+*/

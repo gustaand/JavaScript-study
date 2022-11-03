@@ -1,0 +1,70 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+/* La propiedad opacity va de 0 a 1*/
+
+/* La propiedad position: absolute; hace con que el espacio que ocupa una caja desaparesca, y así la caja de abajo va para
+   arriba. Y el punto de referencia para la posición (top, left) va ser el contenedor (solamente si está posicionado) 
+   o el viewport. También el tamaño de la caja se ajusta al contenido. */
+
+div {
+    /*width: 160px;
+    height: 160px;*/
+    display: block;
+    background: green;
+    position: absolute;
+}
+
+div div {
+    height: 100px;
+    width: 100px;
+    background: yellow;
+}
+
+/* Si la caja contenedora está posicionada, el punto de referencia de todos los contenidos será ella. Sino está posicionada
+   el punto de referencia de los contenidos será el viewport. */
+
+.contenedor {
+    position: relative;
+    margin: 50px;
+    border: 10px ridge red;
+    height: 450px;
+    width: 450px;
+}
+
+.caja1 {
+    top: 0;
+}
+
+.caja2 {
+    right: 0;
+}
+
+.caja3 {
+    right: 0;
+    bottom: 0;
+}
+
+.caja4 {
+    bottom: 0;
+}
+
+/* para centrar una caja en el medio del contenedor, ponemos todas las propiedades en 0;
+   top: 0;  left: 0;  right: 0; bottom: 0; 
+   y además le damos el margin: auto; */
+
+.caja5 {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* si defino top o left, etc, se contará des del viewpor, pero si no pongo nada su ponto de referencia es el contenedor
+   des de su margin, si hay. */
+
+/* si le quito el ancho y el largo de un elemento con el position: absolute; la caja se ajusta al tamaño del contenido. */

@@ -1,0 +1,5 @@
+/* se selecciona una clase dentro de un div en html, y despues se coloca el nombre de la clase__tipo clase y -- especificidad*/
+
+.contact-form__input--active {
+    color: blue;
+}

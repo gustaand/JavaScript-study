@@ -1,0 +1,79 @@
+
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+    background-color: darkblue;
+}
+
+h2 {
+    background-color: red;
+    display: inline-block;
+    padding: 100px;
+    box-sizing: border-box; /* el border-box sirve para determinar el tamaño de la caja para que no cambie si adcionamos algun otro elemento como el padding. El tamaño será solamente del heigth y width.*/
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 50%;
+    border: 20px groove blue;
+    box-shadow: -10px 15px 7px 5px black;
+    text-shadow: 2px 2px 3px white;
+    transform: rotate(-25deg);
+
+    /*height: 100px;
+    width: 100px;*/
+}
+
+/* Padding: es la distancia entre el borde de la caja y las letras. tiene 4 lados: el padding-top, padding-bottom, padding-left
+   y padding-rigth, y se les da el tamaño que quieras. 
+   Si queremos acortar el padding y darle el mismo tamaño a todos los lados basta poner ej: padding: 20px;
+   Si queremos dar tamaños diferentes, el padding va por ejes, primero el Y y despues el X. Se quedaria así: 
+
+   ej: padding: 20px 30px; (aqui el eje Y tendra 20px arriba y abajo, y el eje X 30px en cada lado.
+
+   Si quieres dar propiedades distintas a cada lado, el padding va en sentido horário, empezando por el top.
+   La secuencia es: top, rigth, bottom, left.
+
+   ej: padding: 10px 20px 30px 40px; (en el caso: TOP 10px, RIGTH 20px, BOTTOM 30px, LEFT 40px)   
+   
+   Si no definimos todos, el que falta será definido por el mismo de su eje, como si hubieramos definido todo el eje.
+   
+   ej: padding: 10px 20px 30px; (el left vale 20px, por que el rigth vale 20px y están en el mismo eje) */
+
+
+/* Margin: es la distancia de una caja a otra, y como el padding, también tiene un TOP, un BOTTOM, un RIGTH y un LEFT,
+   y funciona de la misma manera. */
+
+/* Border-radius: sirve para arredondear los bordes de la caja. Si queremos redondearlo todo ponemos 50% con el padding
+   a 100px, o el height y width a 100px */
+
+/* Border: es una propiedad cortada. tiene muchas propiedades dentro, pero si ponemos solamente border: ; podemos decir el
+   tamaño (unidad, ej: px), el estilo (ej: solid), el color (ej: blue) etc.
+
+   ej: border: 4px solid blue;  (el border tendrá un tamaño de 4px, el estilo sólido y el color azul) */
+
+   
+/* Box-shadow: da sombra a la caja. Funciona de la siguiente manera: Primero nos movemos por el eje X (px), despues en el Y (px),
+   decimos cual va ser el tamaño del desenfoque (px), despues el margen (px, normalmente es 0) y despues el color.
+   
+   ej: box-shadow: 10px 10px 7px 3px black; */
+
+/* Box-Sizing: border-box; el border-box sirve para determinar el tamaño de la caja para que no cambie si adcionamos algun otro 
+   elemento como el padding. El tamaño será solamente del heigth y width.
+
+
+/* text-shadow: es lo mismo que box-shadow, pero no tiene margen. Es eje X, eje Y, desenfoque (px) y color.
+   si queremos dar más intensidad, duplicamos el efecto. se pone una coma y se escribe lo mismo delante. 
+   
+   ej: text-shadow: 10px 10px 7px white; */
+
+
+/* Transform: rotate(): El transform sirve para modelar la caja. Rotate es una funcion que sirve para girarla en cuantos 
+   grados queremos.
+   
+   ej: transform: rotate(45deg);
+
+
+/* outline: El outline sirve como un border, pero no afecta a la caja, es como que suelto. sirve para marcar alguna caja
+   sin alterar el contenido. si ponemos el border, este ocupa un espacio dentro o fuera de la caja (dependiendo si el box-sizing
+   es border-box o content-box. ahora el outline es una linea fuera de la caja, que no altera el tamaño ni el contenido de la misma.*/
+

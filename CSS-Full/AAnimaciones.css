@@ -1,0 +1,89 @@
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    padding: 20px 5px;
+    background: #86f;
+}
+
+.caja {
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    position: relative;
+    animation-name: desplazarse;
+    animation-duration: 1.7s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+/* para trabajar con animaciones se usa la regla @keyframes y dar el nombre de la animación. Podemos trabajar con from to, o con %.
+
+    ej: @keyframes desplazarse {
+            from {
+
+            }
+
+            to {
+
+            }
+        } 
+*/
+
+/*
+   Después tenemos que asignar la animación a alguna caja, con los dos parametros obligatorios de la animación:
+   animation-name: nombre de la animación;
+   animation-duration: ej 3s;
+*/
+
+/* con porcentaje se le puede dar vários cambios a lo largo de 0% a 100%.*/
+
+@keyframes desplazarse {
+    0% {
+        left: 0;
+        background: #025;
+    }
+
+    50% {
+        background: #f00;
+    }
+
+    100% {
+        left: 80%;
+        background: #0f0;
+    }
+}
+
+/* ---- PROPIEDADES ----*/
+
+/* animation-name: nombre de la animación; sirve para asignar la animación a alguna caja.*/
+
+/* animation-duration: tiempo; sirve para decir cuanto tiempo durará la animación. */
+
+/* animation-timing-function: ease, ease-in, ease-out, ease-in-out, etc; igual que en transition. */
+
+/* animation-iteration-count: ; define cuantas veces se va a repitir la animación. (podemos usar el valor infinite para
+   repitir infinitamente). */
+
+/* animation-direction: ; nos permite cambiar de dirección lá animación, etc.
+   tiene las propiedades: normal, reverse, alternate, alternate-reverse.
+
+   _ normal: la animación actuará normalmente.
+   _ reverse: la animación actuará del final al principio, se revertirá.
+   _ alternate: la animación actuará de forma que "va y después vuelve", va del principio al final, y después vuelve.
+   _ alternate-reverse: funciona igual que el alternate pero al revés.
+*/
+
+/* animation-delay: tiempo; el tiempo que va tardar en empezar la animación.*/
+
+/* animation-fill-mode: none, backwards, forwards, both; 
+   define como la animación va quedar al final. Cuando se acabe, cual va ser su posición final. 
+   
+   _none: la animación se va parar por defecto.
+   _backwards: la animación se para en la primera posición. (backward).
+   _forwards: la animación se para en la ultima posición que se paró. (forward).
+   _both: sirve para que la animación empieze directamente con el valor del primer efecto que le dimos, aún que tenga un delay.*/

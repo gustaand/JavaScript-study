@@ -1,0 +1,28 @@
+/* Filter es una propiedad para darle filtros a las imagenes.*/
+
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+img {
+    margin: 30px;
+    filter: contrast(1.5);
+}
+
+/* filter és como el transform, se le puede aplicar várias propiedades a la vez.*/
+/* se trabaja con el valor filter: 
+   - none 
+   - blur(px): desenfoca la imagen.
+   - brightness(0-1): brillo. 0 es nada de brillo, y 1 es el brillo total, si pasa de 1 aumentará el brillo.
+   - contrast(number or %): se aumenta o baja el contraste.
+   - drop-shadow(medidas): da una sombra a la imagen. Es casi como un box-shadow, pero con la diferencias de q 
+                           se aplica solamente a la imagén y su contorno, no a la caja. (px px px color).
+   - grayscale(%): escala de gris. Si le damos conpleto, toda la imagen se va poner gris. 100% = 1.
+   - hue-rotate(deg): invierte la gama de colores. Se trabaja con grados. (cambia los colores por rodar la gama de colores).
+   - invert(%): invierte los colores. Va de 0 a 1 o por %.
+   - opacity(%): la opacidad de la imagen. Va de 0 a 1 o por %.
+   - saturate(%): Satura el elemento. Va de 0 a 1 o por %.
+   - sepia(%): Escala del color en sepia (diferente de gris). Va de 0 a 1 o por %.
+   - url("filters.svg#filter-id"): sirve para poner filtros con la url.
+*/

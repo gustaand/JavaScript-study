@@ -1,0 +1,138 @@
+
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background: radial-gradient(circle, #fff, #bbb);
+    padding: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    border: 4px solid #000;
+    background-color:  #333;
+    grid-auto-flow: dense;
+    justify-items: center;
+    align-items: center;
+    /* justify-content: space-evenly; /* se puede dar las propiedades space-evenly, space-arround y space-between. */
+    /* align-content: space-evenly; /* se puede dar las propiedades space-evenly, space-arround y space-between. */
+    height: 600px;
+}
+
+.grid-item {
+    border: 1px solid #000;
+    background-color: #999;
+    font-size: 30px;
+    padding: 50px;
+}
+
+/* ----------- ALINEACIÓN Y CONTROL DE FLUJO --------- */
+
+/* La alineación és dentro de cada celda y no alineación total del flex container.*/
+/* Cada celda seria un "flex container".*/
+/* Propiedades del grid-container: 
+   Alínea items.
+
+   - justify- items: (horizontalmente) agarra las filas y lo centra el contenido. (justify-items: start, end)
+   - align-items: (verticalmente) se centra verticalmente. (align-items: stard, end, center)
+*/
+
+/* strech(Default) - start - center - end */
+
+/* place-items: align-items justify-items */
+
+
+/* ----------- Alineación de filas y columna ----------- */
+
+/* alínea columnas y filas. */
+/* 
+   Justify-content:
+   align-content: 
+*/
+
+/* Trabajamos directamente con las columnas y las filas en el espacio del contenedor.*/
+
+/* Tienen la misma propiedad que flex: *space-arround - *space-between - *space-evenly 
+   Se puede trabajar con: 
+   
+   - justify-content: space-arround;
+   - Justify-content: space-between;
+   - justify-content: space-evenly;
+
+   - align-content: space-arround;
+   - align-content: space-between;
+   - align-content: space-evenly;
+   
+*/
+
+
+/* ------- APLICADO AL GRID ITEM ------- */
+
+/* 
+   alínea individualmente cada item.
+
+   - align-self:
+   - justify-self:
+   - place-self: align-self justify-self 
+   __stretch(Default) - start - center - end
+
+   - order (igual que en flex): se posiciona un elemento en oren de relevancia. Si queremos que aparesca al final de todo
+   le damos un order más alto. Si queremos que aparesca primero, le damos un order más bajo o dejamos sin order.
+*/
+
+/* vamos hacer un efecto! */
+
+.grid-item:first-child {
+    align-self: start;
+    justify-self: start;
+    background-color: #d00;
+}
+
+.grid-item:nth-child(2) {
+    place-self: center;
+    background-color: #508;
+}
+
+.grid-item:nth-child(3) {
+    place-self: start end;
+    background-color: #d00;
+}
+
+.grid-item:nth-child(4) {
+    justify-self: end;
+    background-color: #508;
+}
+
+.grid-item:nth-child(5) {
+    justify-self: center;
+    background-color: #0d5;
+}
+
+.grid-item:nth-child(6) {
+    justify-self: start;
+    background-color: #508;
+}
+
+.grid-item:nth-child(7) {
+    place-self: end start;
+    background-color: #d00;
+}
+
+.grid-item:nth-child(8) {
+    align-self: center;
+    background-color: #508;
+}
+
+.grid-item:last-child {
+    place-self: end end;
+    background-color: #d00;
+}
+
+/* Grid-Template: row / columns (grid-container) ---- SHORTHAND ----*/
+/* Grid-Template: area unidad ---- SHORTHAND ----*/

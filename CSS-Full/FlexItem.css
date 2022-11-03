@@ -1,0 +1,57 @@
+/* Así como los flex container tienen propiedades reservadas para cuando són flex, los flex items también.
+   Estas propiedades són: Align-Self, Flex-Grow, Flex-Shrink, Flex-Basis, Flex (una abreviación), Order.
+   hay muchas más, pero nos vamos a enfocar en estas.*/
+
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.flex-container {
+    display: flex;
+    height: 100vh;
+}
+
+.flex-item {
+    background-color: #248;
+    color: #fff;
+    margin: 5px;
+    min-width: 150px; 
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    height: 100px;
+    flex-grow: 1;
+}
+
+.orange {
+    background: orange;
+    flex-basis: 300px;
+}
+
+.green {
+    background: green;
+    flex-shrink: .5;
+}
+
+/* Align-self: Hace con que la caja se mueva en el cross axis, si queremos que vaya para bajo o para arriba, o en el centro
+  (flex-end, flex-start, center).*/
+
+/* El margin: auto; en las cajas flex se comportan de manera distinta. Se invierte. Si ponemos left, va hacia la derecha,
+   si ponemos top, va hacia bajo, etc. (Si le damos auto en todas las direcciones, la caja se centra en el medio).*/
+
+/* flex-grow: Agarra el espacio que sobra y reparte entre las cajas que quedan. Puedo repartir de la forma que quiero entre
+   las cajas. Si doy flex-grou: 1; a una caja y flex-grow: 2; a otra, ira 2 partes para una y 1 parte para otra.*/
+
+/* Flex-basis: Funciona como un width pero és para las cajas flexible, y además és más importante que el width.*/
+
+/* Flex-shrink: Decide que espacio va ocupar cada caja. Con flex-shrink decidimos cuanto de espacio va ceder cada caja.
+   flex-shrink: 0; la caja no va ceder nada de espacio.*/
+
+/* flex: es una propiedad que agrupa las 3 anteriores. Es un shorthand.
+   flex: flex-grow - flex-shrink - flex-basis; (al menos una propiedad obligatoria).
+   ej: flex: 1 0 320px; .*/
+
+/* Order: Funciona como un z-index (como se posiciona un elemento encima de otro) pero en el eje de main axis.
+   El que tenga el valor más grande va estar más adelante donde apunta el main axis. Si apunta a la derecha,
+   el que tenga el valor más grande va estar más en la derecha, etc.*/

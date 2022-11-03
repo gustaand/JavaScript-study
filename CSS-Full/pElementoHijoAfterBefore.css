@@ -1,0 +1,41 @@
+/* Los elementos before y after son hijos del elemento al que se aplica el pseudo-elemento.*/
+/* no forma parte del DOM.*/
+/* necesita la propiedad CONTENT (obligatorio).*/
+/* Són pseudo-elementos en línea.*/
+/* Funcionan tanto en los elementos en línea cuanto en los elementos en bloque.*/
+
+* {
+    font-family:cursive;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+form {
+    margin: 100px auto;
+    display: block;
+    background-color: #666;
+    padding: 100px;
+    width: 50%;
+}
+
+b {
+    padding: 6px;
+    width: 100%;
+}
+
+/* el Before y el After no forma parte del DOM, entonces no puedo seleccionarlo.*/
+/* no se puede poner etiquetas dentro también.*/
+/* Són pseudo-elementos.*/
+
+b::before {
+    content: "before";
+    color: #fff;
+}
+
+b::after {
+    content: "AFTER";
+    color: red;
+    background: #000;
+}
+
+/* CON PSEUDOELEMENTOS SE PUEDEN HACER VARIAS COSAS, COMO: ÍCONOS BÁSICOS, FIGURAS, DIBUJOS, VÁRIAS ANIMACIONES, ETC.*/

@@ -1,0 +1,47 @@
+/* En CSS también se puede crear variábles. Es un espácio que se almacena en la memória al cual le damos un valor. */
+
+/* 2 tipos de variábles: locales y globales.*/
+
+/* las variables globales són las que se pueden ultilizar des de cualquier lugar.*/
+
+/* Para definir una variáble se pone :root { --nombre-de-la-variáble: valor;}
+   para ultilizarla se coloca en el elemento: var(--nombre-de-la-variáble)*/
+
+:root {
+    --color-rojo-claro: #f44;
+    --color-azul-claro: #66f;
+}
+ 
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+div {
+    padding: 30px;
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+}
+
+.container {
+    background: var(--color-rojo-claro);
+}
+
+.container-2 {
+    background: var(--color-azul-claro);
+}
+
+/* las variábles sirven para poder usarlas en cualquier parte de la página, definindolas en :root. Si queremos poner un color
+   por defecto en vários elementos de la página, és muy recomendable que se use una variáble.*/
+
+/* para definir una variáble local la definimos en el elemento, no en :root. ej:
+
+   .container {
+       --color-black: #000;
+       background: var(--color-black)
+   }
+   
+   En este caso aún que tengamos una variáble igual en el :root, aqui será de la manera que la redefinimos.
+*/

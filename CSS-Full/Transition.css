@@ -1,0 +1,75 @@
+* {
+    font-family: sans-serif;
+    font-size: 100;
+}
+
+.container {
+    padding: 20px 5px;
+    background: #86f;
+}
+
+/* ----- OBLIGATÓRIO ----- */
+/* transition-property:
+   A la caja le damos una transición con transitio-property e le damos a la propiedad q queremos poner la transición
+   ej: transition-property: background */
+/* transition-duration: 
+   Le damos la duración de la transición. */
+
+
+.caja {
+    background: #025;
+    height: 80px;
+    width: 80px;
+    transition-property: left, background, border, border-radius, box-shadow;
+    transition-duration: 2s, 1.5s, 1s, 0.5s, 1.2s;
+    margin: 30px;
+    position: relative;
+    left: 0;
+    border: none;
+    box-shadow: 1px 1px 15px red;
+}
+
+/* para que transition se ejecute, es necesário disparar un evento (hover, oneclick, etc.).*/
+
+/* >>>> lo que estamos diciendo és que al poner el mouse en el contenedor, se camie el estilo de la caja*/
+
+.container:hover > .caja {
+    left: 80%;
+    background: #0cc;
+    border: 2px solid blue;
+    border-radius: 50%;
+    box-shadow: -2px 2px 15px #025;
+}
+
+/* Transition-property: especifica la propiedad al que se le va aplicar la transición. */
+/* Transition-duration: especifica cuanto tiempo dura la transición. */
+/* Transition-delay: especifica cuanto tiempo tardará en comienzar la transición y acabarla. */
+/* Transition-timing-function: especifica la transición en función del tiempo. 
+   tiene vários valores.
+   transition-timing-funtion: linear | ease | ease-in | ease-out | ease-in-out | step-start | step-end | steps(int, start, end) | initial | inherit ;*/
+
+.caja:first-child {
+    transition-timing-function: linear;
+}
+
+.caja:nth-child(2) {
+    transition-timing-function: ease;
+}
+
+.caja:nth-child(3) {
+    transition-timing-function: ease-in;
+}
+
+.caja:nth-child(4) {
+    transition-timing-function: ease-out;
+}
+
+.caja:nth-child(5) {
+    transition-timing-function: ease-in-out;
+}
+
+
+/* valor inherit hereda la propiedad de la caja que lo contiene, por ejemplo el color. Si el color de la caja fuere azul,
+   el del item que tenga el valor inherit también va ser azul. */
+
+/* ---- Se puede crear una infinidad de cosas con animaciones en transiciones ---- */

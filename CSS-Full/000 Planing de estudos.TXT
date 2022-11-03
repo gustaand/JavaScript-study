@@ -1,0 +1,103 @@
+-------------- CSS Iniciante --------------
+
+0 - Introducción
+1 - Comienzo del Curso
+2 - Editor de texto
+3 - Estructura
+4 - Selectores
+5 - Especificidad
+6 - Metodología BEM
+7 - Unidades
+8 - Propiedades de Texto
+9 - Tipografías externas
+10 - Normalize
+11 - Cajas
+12 - Padding
+13 - Width y Height
+14 - Box Sizing
+15 - Margin
+16 - Bordes
+17 - Box Model
+18 - Sombras
+19 - Outline
+20 - Position
+21 - Position Static
+22 - Position Relative
+23 - Z Index
+24 - Position Absolute
+25 - Position Fixed
+26 - Position Sticky
+
+-------------- CSS Intermedio --------------
+
+1 - Display
+2 - Overflow
+3 - Float
+4 - Pseudoelementos
+5 - Pseudoclases
+6 - Objet Fit
+7 - Objet Position
+8 - Cursor
+9 - Colorización (ColorName, Hex, RGB/A)
+10 - Conceptos Básicos de Responsive
+11 - Menu Responsive
+12 - Introducción a Flexbox
+13 - Conceptos de Flexbox
+14 - Display Flex
+15 - Flex direction
+16 - Flex wrap
+17 - Alineacion en Flex
+18 - Flex Grow
+19 - Flex Basis
+20 - Flex Shrink
+21 - Order
+22 - Formulario con Flex
+23 - Conceptos de Grid
+24 - Display Grid
+25 - Grid Templates
+26 - Medidas especiales de Grid
+27 - Grid Gap
+28 - Asignación de espacios
+29 - Repeat()
+30 - Grid Implícito y Explícito
+31 - Grid Auto
+32 - Grid Dinámico
+33 - Alineación en Grid
+34 - Galería en Grid
+35 - Grid Areas
+36 - Nombrar Grid Lines
+37 - Grid Shorthands
+38 - Responsive Design
+39 - Estructura Responsive Básica
+
+-------------- CSS Avanzado --------------
+1 - Transition
+2 - Animaciones
+3 - Cubic Bezier
+4 - Transform
+5 - Clip Path
+6 - Background
+7 - Variables
+8 - Filtros
+9 - Práctica con Filter
+10 - Direction
+11 - Letter Spacing
+12 - Scroll Behavior
+13 - User Selected
+14 - Práctica Final
+15 - Continua Aprendiendo
+
+
+******* Enlaces ******* 
+
+Cursor:  https://www.w3schools.com/cssref/tryi...
+Font Awesome: https://kit.fontawesome.com/62ea397d3...
+Transform: https://www.w3schools.com/cssref/css3...
+Códigos de Colores: https://htmlcolorcodes.com/es/
+Generador de Cubic Bezier: https://cubic-bezier.com/#.17,.67,.83...
+Generador de Clip Path: https://bennettfeely.com/clippy/
+Generador de Box-Shadows: https://www.cssmatic.com/es/box-shadow
+Selectores: https://www.w3schools.com/cssref/css_...
+
+
+TOTAL: 80 TEMAS

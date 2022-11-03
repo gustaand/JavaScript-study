@@ -1,0 +1,47 @@
+* {
+    font-weight: 100;
+    font-size: 20px;
+}
+body{
+    background: #000;
+}
+/* Hay un montón de colores, pero no se recomienda ponerlos por nombres, por que si ponemos por ejemplo "red", el navegador va
+   elegir el color rojo que quiera. En cambio si escribimos el color en exadecimal ejemplo "#f00" ningun navegador podrá
+   cambiar este color, por que és un color totalmente definido.*/
+
+/* los colores primarios de la informatica són: rojo, verde y azul (RGB).
+   cuando trabajamos con RGB le ponemos rgb(0, 0, 0), la secuencia es Red Green Blue y las medidas van de 0 a 255,
+   0 es nada de ese color, 255 és todo. */
+/* si ponemos rgb(255, 0, 0) será un rojo, etc. Si mesclo los colores rgb(255, 0, 255) me saldrá el color mesclado (violeta). */
+/* si pongo todos los colores juntos rgb(255, 255, 255) me dará blanco, por que trabaja con luces. */
+
+   .caja {
+    margin: 40px;
+    width: 200px;
+    height: 300px;
+    border: 5px solid #f00;
+    background: rgb(120, 120, 120);
+}
+
+/* El RGBA sirve igual el RGB, pero se puede bajar la opacidade con el A que es Alpha. Sin la necesidad de ultilizar el opacity:;.*/
+/* rgb(190,190,190, 0.5), és igual que el opacity, va de 0 a 1. */
+
+.caja1 {
+    margin: 40px;
+    width: 200px;
+    height: 300px;
+    border: 5px solid #f00;
+    background: RGBA(200, 0, 0, 1);
+}
+
+/* también hay el metodo HEXADECIMAL: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, A, B, C, D, E, F. (16 unidades entre numeros y letras).*/
+/* podemos escribir hasta 6 unidades ej: #ffffff , #fff. donde f es el maximo de cada valor, y se cuenta R G B.
+   donde #fff sería el maximo de Red, de Green y de Blue, que daría Blanco. (VER IMAGEN EN LA CARPETA).*/
+
+.caja2 {
+    margin: 40px;
+    width: 200px;
+    height: 300px;
+    border: 5px solid #f00;
+    background: #ff0000;
+}

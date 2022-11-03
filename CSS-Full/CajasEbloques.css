@@ -1,0 +1,19 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+/* Para cambiar el comportamiento de las cajas y lineas, se usa el elemento display */
+
+h2 {
+    display: inline;
+}
+
+/* A los elementos en línea no se puede dar height ni width, pero a los elementos en bloque sí.*/
+/* Se puede hacer un elemento en linea con las propiedades de una caja ultilizando display: inline-block; */
+
+p {
+    height: 200px;
+    width: 200px;
+}

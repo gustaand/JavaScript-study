@@ -1,0 +1,57 @@
+/* El cubic-bezier és una propiedad del animation-timing-function. 
+   Toda animación tiene una curva que define su movimiento (si empieza suave y acaba brusco,
+   o si empieza brusco y acaba suave, etc), Y el cubic-bezier sirve para definir esa curva.*/
+
+/* El cubic-bezier funciona con las coordenadas (x, y (primer punto), x, y (segun punto)). 
+   ej: animatio-timing-function: cubic-bezier(0.04, 1.08, 0.76, 1.11) .*/
+
+/* Extisten generadores de cubic-bezier para dar diversos efectos a la animación, o podemos usar la heramienta de google
+   que nos permite inspeccionar el elemento y modificar el la curva del cubic-bezier de la forma que queramos.
+   Así podemos copiar y pegar las coordenadas que se formaran. */
+
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+.container {
+    padding: 20px 5px;
+    background: #86f;
+}
+
+.caja {
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    position: relative;
+    animation-name: desplazarse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.09, 1.14, 1,-0.05);
+}
+
+
+
+@keyframes desplazarse {
+    0% {
+        left: 0;
+        background: #025;
+    }
+
+    50% {
+        background: #f00;
+    }
+
+    100% {
+        left: 80%;
+        background: #0f0;
+    }
+}
+
+/* El cubic-bezier ES MUY IMPORTANTE para los efectos, y se puede generar efectos realistas, de rebote etc. */
+
+/* heramienta de google: inspeccionar elemento, caja, style, animation-timing-function.*/

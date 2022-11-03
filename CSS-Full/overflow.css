@@ -1,0 +1,68 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 40px;
+    background: black;
+}
+
+/* El OVERFLOW es lo que sobrepasa de la caja (lo que sobra). Podemos usar el comando overflow para
+   hacer que algo no sobrepase el tamaño de una caja, ajustandose a ella.*/
+/* Es un elemento shorthand por que trabaja con elemento X e Y, entonces se le puede abreviar.*/
+.overflow-auto {
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    background: gray;
+    overflow: auto;
+}
+
+
+/* overflow: auto; detecta en caso de que el contenido se sobresalga de la caja y lo ajusta automaticamente de acuerdo con
+   el tamaño. Si hace falta el pone los scrolls.*/
+
+/* overflow: scroll; hace con que obligatoriamente aparezcan los scrolls, tanto vertical como horizontal.*/
+
+/* overflow: hidden; sirve para ocultar los elementos overflow aplicados.*/
+
+
+
+/*    I M A G E N E S !    */
+
+/* Las imagenes no se sobresalen de la caja, aún que el overflow no esté definido. */
+/* Si la imagen está posicionada con algun position, si que se sobresale*/
+
+.div-img {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    background: gray;
+}
+
+/* Aqui la imagen sobresale de la caja, pero con overflow: hidden; podemos ocultar la parte que sale.*/
+
+.div-img-hidden {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    background: gray;
+    overflow: hidden;
+}
+
+/* Aqui lá imagen está posicionada, por lo tanto si que puede salir de su caja, y con el elemento hidden de overflow
+   (overflow: hidden;) se puede ocultar lo que sale de la caja.*/
+
+.img2 {
+    width: 1000px;
+    position: relative;
+    top: 20px;
+    left: 40px;
+    outline: 2px solid blue;
+}

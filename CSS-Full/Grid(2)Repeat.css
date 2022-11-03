@@ -1,0 +1,53 @@
+/* Grid container: Es todo el conteiner, quando damos display: grid; en una caja, se comporta como block pero cambia la estructura.
+  ahora el contenido va estar dividido por grids.*/
+
+/* Grid Item: són todos los elementos que están dentro de un grid container, independiente de donde están.*/
+
+/* Grid Cell: Es el dibujo que se hace dentro del contenedor cuando ponemos columnas y filas. (són los "cuadraditos" del grid).*/
+
+/* Grid Tracks (column y row): los grid tracks column són las columnas, y los grid tracks row són filas. 
+  El total de tracks és la suma de las columnas y las filas: Column + Row = Total Tracks.*/
+
+/* Grid Area: són areas que seleccionamos del grid, y són consecutivas. Las áreas la definimos nosotros, to existe área por defecto.
+   no puede haver áreas horizontales ni vertical mesclado con horizontal (en cruz), tienen que ser consecutivas.*/
+
+/* Grid Line (Column Line y Row Line: són las líneas divisórias del grid. La cantidad de líneas se cuenta con las de los bordes.
+   por ejemplo: si tenemos un cuadrado, hay 4 líneas, 2 column lines y 2 row lines.*/
+
+
+
+
+/* !!!!!!!!! Repeat(CANTIDAD, TAMAÑO/S)  (Grid container)
+  conesto creamos columnas y filas que són repetitivas. !!!!!!!!!!!!!!!! */
+
+   * {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+body {
+    background: radial-gradient(circle, #fff, #bbb);
+    padding: 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px) 1fr;
+    grid-template-rows: repeat(3, 150px);
+    border: 4px solid #000;
+    background-color:  #333;
+    /*grid-gap: 10px;*/
+}
+
+.grid-item {
+    border: 1px solid #000;
+    background-color: #999;
+}
+
+.grid-item:first-child {
+   background-color: #900;
+   grid-column: 3 / span 2;
+   grid-row: 1 / span 2;
+}
+
+/* Seleccionar elementos con:nth-child(numero del elemento).*/
