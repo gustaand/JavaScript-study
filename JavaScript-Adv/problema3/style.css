@@ -1,0 +1,33 @@
+body {
+    color: #333;
+    font-family: sans-serif;
+}
+
+.formulario-de-notas {
+    margin: 50px 30%;
+    text-align: center;
+    background: #26e;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+h2 {
+    margin: 0;
+    flex-grow: 1;
+    color: #fff;
+}
+
+input {
+    width: 30px;
+    border: none;
+}
+
+input[type="button"]{
+    width: auto;
+    margin-left: 6px;
+    color: #48e;
+    background: #fff;
+    border: none;
+    letter-spacing: 1px;
+}

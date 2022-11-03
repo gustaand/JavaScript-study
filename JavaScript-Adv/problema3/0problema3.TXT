@@ -1,0 +1,4 @@
+- Crear interfaz para introcucir nota
+- validar que no haya errores
+- promediar notas con trabajos
+- si el promerio es mayor a 7/10 aprobar

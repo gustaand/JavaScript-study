@@ -1,0 +1,1 @@
+crear un sistema que muestre todas las informaciones de las materias y las muestre en pantalla de forma ordenada!
